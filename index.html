@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Findar Application</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,300&family=Roboto:wght@100;300;400;700&display=swap");
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meal Findar</h1>
+      <div class="flex">
+        <form class="flex" id="submit">
+          <input type="text" id="search" placeholder="Search for meal" />
+          <button class="search_btn" type="submit">
+            <i class="material-symbols-outlined">Search</i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="material-symbols-outlined">shuffle</i>
+        </button>
+      </div>
+
+      <div class="result-heading"></div>
+      <div class="meals" id="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
